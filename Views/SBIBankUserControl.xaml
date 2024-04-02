@@ -30,7 +30,7 @@
                                     <Ellipse.Fill>
                                         <VisualBrush>
                                             <VisualBrush.Visual>
-                                                <Image Source="{Binding TabTitle.ImageUrl}"/>
+                                                <Image Source="{Binding TabTitle.ImageUrl}" Stretch="Uniform" StretchDirection="Both"/>
                                             </VisualBrush.Visual>
                                         </VisualBrush>
                                     </Ellipse.Fill>
