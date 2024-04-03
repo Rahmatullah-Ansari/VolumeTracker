@@ -51,6 +51,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2B37CF080AD5C83EDE8B88C3DC773C11"
+        "OwnerKey" = "8:_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2F853BEBDDD842DB80E5EE0A85652589"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -70,6 +76,12 @@
         "Entry"
         {
         "MsmKey" = "8:_43A4F27BB83528139E498F836A27545C"
+        "OwnerKey" = "8:_FBCC0B1C5F24429C8517185AD51384FA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
         "OwnerKey" = "8:_FBCC0B1C5F24429C8517185AD51384FA"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -208,19 +220,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2B37CF080AD5C83EDE8B88C3DC773C11"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_FBCC0B1C5F24429C8517185AD51384FA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_43A4F27BB83528139E498F836A27545C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2B37CF080AD5C83EDE8B88C3DC773C11"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -241,13 +259,29 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\VolumeTrackerSetup.msi"
+        "OutputFilename" = "8:Release\\Volume Tracker.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -257,6 +291,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -491,6 +541,37 @@
                     }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_A51F094B7D10454E8D6567E7064428A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Enums.NET, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7ea1c1650d506225, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
+                    {
+                    "Name" = "8:Enums.NET.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Enums.NET.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A51F094B7D10454E8D6567E7064428A7"
@@ -1005,9 +1086,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:VolumeTrackerSetup"
+        "ProductName" = "8:Volume Tracker"
         "ProductCode" = "8:{5181428B-489B-49ED-ADD4-076DDB4F0F35}"
-        "PackageCode" = "8:{D7B20C1C-5A16-456E-9971-787D4639DD63}"
+        "PackageCode" = "8:{92B98769-EAFB-4FD6-990B-53086E9D9C12}"
         "UpgradeCode" = "8:{E1098239-DB8F-4F33-9103-D1766D8A4A99}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1570,7 +1651,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FBCC0B1C5F24429C8517185AD51384FA"
             {
-            "SourcePath" = "8:..\\obj\\Debug\\BankingApp.exe"
+            "SourcePath" = "8:..\\obj\\Release\\BankingApp.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A51F094B7D10454E8D6567E7064428A7"
