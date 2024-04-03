@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:BankingApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <FontFamily x:Key="MontserratRegular">pack://application:,,,/Montserrat/Montserrat-Regular.ttf#Montserrat</FontFamily>
+        <FontFamily x:Key="MontserratSemibold">pack://application:,,,/Montserrat/Montserrat-SemiBold.ttf#Montserrat</FontFamily>
+        <FontFamily x:Key="MontserratLight">pack://application:,,,/Montserrat/Montserrat-Light.ttf#Montserrat</FontFamily>
+        <FontFamily x:Key="MontserratBold">pack://application:,,,/Montserrat/Montserrat-Bold.ttf#Montserrat</FontFamily>
+        <FontFamily x:Key="MontserratMedium">pack://application:,,,/Montserrat/Montserrat-Medium.ttf#Montserrat</FontFamily>
         <Style TargetType="{x:Type TabItem}" x:Key="TabItemStyle">
             <Setter Property="Template">
                 <Setter.Value>
@@ -12,19 +17,19 @@
                             <Border Name="Border" BorderThickness="0" BorderBrush="Gainsboro" CornerRadius="5,5,0,0"
                             Margin="4">
                                 <ContentPresenter x:Name="ContentPresenter" VerticalAlignment="Center" HorizontalAlignment="Stretch"
-                                          ContentSource="Header" TextBlock.FontSize="18"/>
+                                          ContentSource="Header" TextBlock.FontSize="18" />
                             </Border>
                         </Grid>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsSelected" Value="True">
                                 <Setter TargetName="Border" Property="Background"
-                                Value="#ffcccc" />
+                                        Value="#ffcccc" />
                                 <Setter Property="Foreground" Value="White" />
                             </Trigger>
                             <Trigger Property="IsSelected" Value="False">
                                 <Setter Property="Foreground" Value="#003569" />
                                 <Setter TargetName="Border" Property="Background"
-                                Value="white" />
+                                        Value="white" />
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -32,24 +37,5 @@
             </Setter>
             <Setter Property="Padding" Value="0" />
         </Style>
-
-        <FontFamily x:Key="MontserratBlack">pack://application:,,,/Fonts/Montserrat-Black.ttf#Montserrat Black</FontFamily>
-        <FontFamily x:Key="MontserratBlackItalic">pack://application:,,,/Fonts/Montserrat-BlackItalic.ttf#Montserrat Black</FontFamily>
-        <FontFamily x:Key="MontserratBold">pack://application:,,,/Fonts/Montserrat-Bold.ttf#Montserrat</FontFamily>
-        <FontFamily x:Key="MontserratBoldItalic">pack://application:,,,/Fonts/Montserrat-BoldItalic.ttf#Montserrat</FontFamily>
-        <FontFamily x:Key="MontserratExtraBold">pack://application:,,,/Fonts/Montserrat-ExtraBold.ttf#Montserrat ExtraBold</FontFamily>
-        <FontFamily x:Key="MontserratExtraBoldItalic">pack://application:,,,/Fonts/Montserrat-ExtraBoldItalic.ttf#Montserrat ExtraBold</FontFamily>
-        <FontFamily x:Key="MontserratExtraLight">pack://application:,,,/Fonts/Montserrat-ExtraLight.ttf#Montserrat ExtraLight</FontFamily>
-        <FontFamily x:Key="MontserratExtraLightItalic">pack://application:,,,/Fonts/Montserrat-ExtraLightItalic.ttf#Montserrat ExtraLight</FontFamily>
-        <FontFamily x:Key="MontserratItalic">pack://application:,,,/Fonts/Montserrat-Italic.ttf#Montserrat</FontFamily>
-        <FontFamily x:Key="MontserratLight">pack://application:,,,/Fonts/Montserrat-Light.ttf#Montserrat Light</FontFamily>
-        <FontFamily x:Key="MontserratLightItalic">pack://application:,,,/Fonts/Montserrat-LightItalic.ttf#Montserrat Light</FontFamily>
-        <FontFamily x:Key="MontserratMedium">pack://application:,,,/Fonts/Montserrat-Medium.ttf#Montserrat Medium</FontFamily>
-        <FontFamily x:Key="MontserratMediumItalic">pack://application:,,,/Fonts/Montserrat-MediumItalic.ttf#Montserrat Medium</FontFamily>
-        <FontFamily x:Key="MontserratRegular">pack://application:,,,/Fonts/Montserrat-Regular.ttf#Montserrat</FontFamily>
-        <FontFamily x:Key="MontserratSemiBold">pack://application:,,,/Fonts/Montserrat-SemiBold.ttf#Montserrat SemiBold</FontFamily>
-        <FontFamily x:Key="MontserratSemiBoldItalic">pack://application:,,,/Fonts/Montserrat-SemiBoldItalic.ttf#Montserrat SemiBold</FontFamily>
-        <FontFamily x:Key="MontserratThin">pack://application:,,,/Fonts/Montserrat-Thin.ttf#Montserrat Thin</FontFamily>
-        <FontFamily x:Key="MontserratThinItalic">pack://application:,,,/Fonts/Montserrat-ThinItalic.ttf#Montserrat Thin</FontFamily>
     </Application.Resources>
 </Application>

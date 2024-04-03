@@ -4,8 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BankingApp.Views"
+             FontFamily="{StaticResource MontserratMedium}"
              mc:Ignorable="d" 
-             FontFamily="{DynamicResource MontserratSemiBold}"
              d:DesignHeight="650" d:DesignWidth="800">
     <UserControl.Resources>
         <Style TargetType="TextBox" x:Key="TextBoxWithCornerRadiusStyle">
@@ -30,55 +30,55 @@
     </UserControl.Resources>
     <Grid  Background="AliceBlue">
         <ScrollViewer>
-            <Border BorderBrush="Black" BorderThickness="1" Margin="4" CornerRadius="10" Width="1020" Height="600" Background="WhiteSmoke">
+            <Border BorderBrush="Black" BorderThickness="1" Margin="4" Padding="20" CornerRadius="15" Width="1060" Height="600" Background="#F5FDFF">
                 <StackPanel Orientation="Vertical"  HorizontalAlignment="Center">
-                    <TextBlock Text="Basic Details" FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" Padding="15"/>
+                    <TextBlock Text="Basic Details" Foreground="#004C8F" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Padding="10 14"/>
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                         <StackPanel Orientation="Horizontal">
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text="First Name" Padding="10 10 10 0" Margin="10 0" FontWeight="Bold" FontSize="17" FontStyle="Italic"/>
-                                <TextBox x:Name="firstname" Padding="10 5" Width="320" FontSize="17" Margin="10 0 10 10"  Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
+                                <TextBlock Text="First Name" Foreground="#292929" Padding="0 10 10 10" Margin="10 0"  FontSize="14" />
+                                <TextBox x:Name="firstname" Padding="10 5" Width="320" FontSize="14" Margin="10 0 10 10"  Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Middle Name" Padding="10 10 10 0"  FontStyle="Italic" Margin="10 0" FontWeight="Bold" FontSize="17"/>
-                                <TextBox x:Name="middlename"  Margin="10 0 10 10" Width="320" Padding="10 5" FontSize="17" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
+                                <TextBlock Text="Middle Name" Foreground="#292929" Padding="0 10 10 10"   Margin="10 0"  FontSize="14"/>
+                                <TextBox x:Name="middlename"  Margin="10 0 10 10" Width="320" Padding="10 5" FontSize="14" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Last Name" Padding="10 10 10 0" FontStyle="Italic" Margin="10 0" FontWeight="Bold" FontSize="17"/>
-                                <TextBox x:Name="lastname" Padding="10 5" Margin="10 0 10 10" Width="320" FontSize="17" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
-                            </StackPanel>
-                        </StackPanel>
-                        <TextBlock Text="AadharCard Number" Padding="10 10 10 0" FontStyle="Italic" Margin="10 0" FontWeight="Bold" FontSize="17"/>
-                        <TextBox x:Name="aadharcardnummber" Padding="10 5" Margin="10 0 10 10" FontSize="17" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Fathers Name" Padding="10 10 10 0" FontStyle="Italic" Margin="10 0" FontWeight="Bold" FontSize="17"/>
-                                <TextBox x:Name="fathersname" Padding="10 5" Width="480" Margin="10 0 10 10" FontSize="17" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
-                            </StackPanel>
-                            <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Mothers Name" Padding="10 10 10 0" FontStyle="Italic" Margin="15 0" FontWeight="Bold" FontSize="17"/>
-                                <TextBox x:Name="mothersname" Padding="10 5" Width="480" Margin="25 0 10 10" FontSize="17" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
+                                <TextBlock Text="Last Name" Foreground="#292929" Padding="0 10 10 10"  Margin="10 0"  FontSize="14"/>
+                                <TextBox x:Name="lastname" Padding="10 5" Margin="10 0 10 10" Width="320" FontSize="14" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
                             </StackPanel>
                         </StackPanel>
+                        <TextBlock Text="Aadhaar Card Number" Foreground="#292929" Padding="0 10 10 10"  Margin="10 0"  FontSize="14"/>
+                        <TextBox x:Name="aadharcardnummber" Padding="10 5" Margin="10 0 10 10" FontSize="14" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
                         <StackPanel Orientation="Horizontal">
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Phone Number" Padding="10 10 10 0" FontStyle="Italic" Margin="10 0" FontWeight="Bold" FontSize="17"/>
-                                <TextBox x:Name="phonenumber" Padding="10 5" Width="480" Margin="10 0 10 10" FontSize="17" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
+                                <TextBlock Text="Father's Name" Foreground="#292929" Padding="0 10 10 10"  Margin="10 0"  FontSize="14"/>
+                                <TextBox x:Name="fathersname" Padding="10 5" Width="480" Margin="10 0 10 10" FontSize="14" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Mobile Number" Padding="10 10 10 0" FontStyle="Italic" Margin="15 0" FontWeight="Bold" FontSize="17"/>
-                                <TextBox x:Name="mobilenumber" Padding="10 5" Width="480" Margin="25 0 10 10" FontSize="17" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
+                                <TextBlock Text="Mother's Name" Foreground="#292929" Padding="10 10 10 10"  Margin="15 0"  FontSize="14"/>
+                                <TextBox x:Name="mothersname" Padding="10 5" Width="480" Margin="25 0 10 10" FontSize="14" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Phone Number" Foreground="#292929" Padding="0 10 10 10"  Margin="10 0" FontSize="14"/>
+                                <TextBox x:Name="phonenumber" Padding="10 5" Width="480" Margin="10 0 10 10" FontSize="14" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Mobile Number" Foreground="#292929" Padding="10 10 10 10"  Margin="15 0"  FontSize="14"/>
+                                <TextBox x:Name="mobilenumber" Padding="10 5" Width="480" Margin="25 0 10 10" FontSize="14" Style="{StaticResource TextBoxWithCornerRadiusStyle}"></TextBox>
                             </StackPanel>
                         </StackPanel>
                         <Border BorderThickness="1" BorderBrush="Black" Margin="10 10"  CornerRadius="7">
-                            <StackPanel Background="CadetBlue">
-                                <TextBlock Text="Permanent Address" Padding="10 5 10 0" FontStyle="Italic" Margin="10 0" FontWeight="Bold" FontSize="17"/>
-                                <TextBox x:Name="permanentaddress" Padding="10 5" Margin="10" Height="50" TextWrapping="Wrap" FontSize="17" Style="{StaticResource TextBoxWithCornerRadiusStyle}"/>
+                            <StackPanel Background="#004C8F">
+                                <TextBlock Text="Permanent Address" Padding="0 5 10 10" Foreground="White"  Margin="10 0"  FontSize="14"/>
+                                <TextBox x:Name="permanentaddress" Padding="10 5" Margin="10 5 10 10" Height="50" TextWrapping="Wrap" FontSize="12" Style="{StaticResource TextBoxWithCornerRadiusStyle}"/>
                             </StackPanel>
                         </Border>
 
                     </StackPanel>
-                    <Button x:Name="Submit" FontSize="15" Background="CadetBlue" Foreground="White" HorizontalAlignment="Right" Margin="25" Width="200" Height="40" FontWeight="ExtraBlack" Click="Submit_Click">
+                    <Button x:Name="Submit" FontSize="15" Background="#004C8F" Foreground="White" HorizontalAlignment="Right" Margin="5 25" Width="200" Height="40" Click="Submit_Click">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Template">
@@ -86,7 +86,7 @@
                                         <ControlTemplate TargetType="Button">
                                             <Border Background="{TemplateBinding Background}" CornerRadius="10">
                                                 <Grid>
-                                                    <TextBlock Text="Submit" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                                    <TextBlock Text="Submit" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center"/>
                                                 </Grid>
                                             </Border>
                                         </ControlTemplate>
