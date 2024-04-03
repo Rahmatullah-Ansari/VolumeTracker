@@ -19,7 +19,10 @@ namespace BankingApp.Views
             if (!(string.IsNullOrEmpty(firstName.Text) || string.IsNullOrEmpty(middleName.Text) || string.IsNullOrEmpty(lastName.Text) ||
                 string.IsNullOrEmpty(fathersName.Text) || string.IsNullOrEmpty(mothersName.Text) || string.IsNullOrEmpty(phoneNumber.Text) ||
                 string.IsNullOrEmpty(mobileNumber.Text) || string.IsNullOrEmpty(parmanentAddress.Text) || string.IsNullOrEmpty(accountNumber.Text)))
+            {
                 MessageBox.Show("Account Created Successfully", "Success", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+                firstName.Text = lastName.Text = middleName.Text = fathersName.Text = mobileNumber.Text = mothersName.Text = parmanentAddress.Text = mothersName.Text = phoneNumber.Text = accountNumber.Text = "";
+            }
             else
                 MessageBox.Show("All fields are mandatory", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
