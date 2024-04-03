@@ -198,6 +198,9 @@
     <Content Include="Images\AccountOpening.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Group.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\HomeIcon1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
