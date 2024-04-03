@@ -13,12 +13,14 @@
         Width="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanResize" WindowState="Maximized">
-    <Grid Name="MainGrid">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Image Source="/Images/BankLogo.png" Grid.Row="0" Width="120" Height="120"/>
-        <UserControl Grid.Row="1" Content="{Binding SelectedTab.TabContent.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-    </Grid>
+    <ScrollViewer>
+        <Grid Name="MainGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Source="/Images/BankLogo.png" Grid.Row="0" Width="210" Height="90" Stretch="UniformToFill" StretchDirection="Both"/>
+            <UserControl Grid.Row="1" Content="{Binding SelectedTab.TabContent.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
+    </ScrollViewer>
 </Window>
