@@ -6,29 +6,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BankingApp.Views"
              mc:Ignorable="d">
-    <!--<Grid>
-        <Border CornerRadius="10">
-            <Border.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="#7be9f6" Offset="0.0"/>
-                    <GradientStop Color="DarkMagenta" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
-        <StackPanel VerticalAlignment="Center"
-                    HorizontalAlignment="Center">
-            <Image Source="/Images/Group.png"/>
-            <TextBlock Text="WELCOME TO HOME PAGE" Foreground="White"
-                         FontFamily="helvetica"
-                         FontWeight="SemiBold"
-                           FontSize="20" HorizontalAlignment="Center"
-                           />
-        </StackPanel>
-       
-    </Grid>-->
-    <ScrollViewer>
-        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10">
-            <Image Source="/Images/Group.png" Stretch="UniformToFill" StretchDirection="Both"/>
-        </Border>
-    </ScrollViewer>
+    <Border BorderBrush="Transparent" BorderThickness="0">
+        <Image Source="/Images/Group44-2.png" Stretch="Fill" HorizontalAlignment="Left"/>
+    </Border>
 </UserControl>

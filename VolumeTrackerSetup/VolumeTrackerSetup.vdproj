@@ -45,6 +45,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2B37CF080AD5C83EDE8B88C3DC773C11"
+        "OwnerKey" = "8:_FBCC0B1C5F24429C8517185AD51384FA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2F853BEBDDD842DB80E5EE0A85652589"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -64,12 +70,6 @@
         "Entry"
         {
         "MsmKey" = "8:_43A4F27BB83528139E498F836A27545C"
-        "OwnerKey" = "8:_FBCC0B1C5F24429C8517185AD51384FA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
         "OwnerKey" = "8:_FBCC0B1C5F24429C8517185AD51384FA"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -117,6 +117,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_768B046731E044B19B87B08321E3B2FF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_77D89B90633F4A1AB29E8A5A4787EA77"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -155,18 +161,6 @@
         {
         "MsmKey" = "8:_CCD23E1EC20E48D19E6916A70EA310A1"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D157B7A8E2DE625120A0AC0950C70105"
-        "OwnerKey" = "8:_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D157B7A8E2DE625120A0AC0950C70105"
-        "OwnerKey" = "8:_FBCC0B1C5F24429C8517185AD51384FA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -232,19 +226,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D157B7A8E2DE625120A0AC0950C70105"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_43A4F27BB83528139E498F836A27545C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2B37CF080AD5C83EDE8B88C3DC773C11"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -442,6 +430,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2B37CF080AD5C83EDE8B88C3DC773C11"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_2B37CF080AD5C83EDE8B88C3DC773C11"
+                    {
+                    "Name" = "8:System.Runtime.CompilerServices.Unsafe.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Runtime.CompilerServices.Unsafe.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_A51F094B7D10454E8D6567E7064428A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2F853BEBDDD842DB80E5EE0A85652589"
             {
             "SourcePath" = "8:..\\Images\\Baroda.png"
@@ -516,37 +535,6 @@
                     }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_A51F094B7D10454E8D6567E7064428A7"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Enums.NET, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7ea1c1650d506225, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_4AEE5A28A1F2FD61F6C8EE40ED444DD4"
-                    {
-                    "Name" = "8:Enums.NET.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Enums.NET.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A51F094B7D10454E8D6567E7064428A7"
@@ -704,6 +692,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_768B046731E044B19B87B08321E3B2FF"
+            {
+            "SourcePath" = "8:..\\Images\\Group44-2.png"
+            "TargetName" = "8:Group44-2.png"
+            "Tag" = "8:"
+            "Folder" = "8:_160B6E84972D454489BCB6B368BBF0BB"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_77D89B90633F4A1AB29E8A5A4787EA77"
             {
             "SourcePath" = "8:..\\Images\\HDFC.png"
@@ -842,37 +850,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D157B7A8E2DE625120A0AC0950C70105"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_D157B7A8E2DE625120A0AC0950C70105"
-                    {
-                    "Name" = "8:System.Runtime.CompilerServices.Unsafe.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Runtime.CompilerServices.Unsafe.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_A51F094B7D10454E8D6567E7064428A7"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D9A550D7B22C405C99DEE505ADA9A566"
@@ -1677,7 +1654,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FBCC0B1C5F24429C8517185AD51384FA"
             {
-            "SourcePath" = "8:..\\obj\\Release\\BankingApp.exe"
+            "SourcePath" = "8:..\\obj\\Debug\\BankingApp.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A51F094B7D10454E8D6567E7064428A7"

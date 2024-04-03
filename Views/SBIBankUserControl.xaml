@@ -7,7 +7,8 @@
              xmlns:local="clr-namespace:BankingApp.Views"
              mc:Ignorable="d" 
              xmlns:resource="clr-namespace:BankingApp.Properties"
-             xmlns:models="clr-namespace:BankingApp.Models">
+             xmlns:models="clr-namespace:BankingApp.Models"
+             d:DesignHeight="450" d:DesignWidth="800">
     <Grid Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -17,7 +18,7 @@
                     ItemContainerStyle="{StaticResource TabItemStyle}">
             <TabControl.ItemTemplate>
                 <DataTemplate DataType="{x:Type  models:TabItemTemplate}">
-                    <Border x:Name="TabBorder" BorderThickness="2" BorderBrush="PaleVioletRed" CornerRadius="5">
+                    <Border x:Name="TabBorder" BorderThickness="1.5" BorderBrush="#F15A29" CornerRadius="5">
                         <Grid Background="Transparent" Name="TabGrid" Margin="4">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
@@ -31,7 +32,7 @@
                                     </Ellipse.Fill>
                                 </Ellipse>
                             </StackPanel>
-                            <Label Grid.Row="1" HorizontalAlignment="Center" Content="{Binding TabTitle.Title}" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <Label Grid.Row="1" HorizontalAlignment="Center" Foreground="#292075" Content="{Binding TabTitle.Title}" FontWeight="SemiBold" Margin="0,0,0,5"/>
                         </Grid>
                     </Border>
                 </DataTemplate>

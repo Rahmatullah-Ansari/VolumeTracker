@@ -25,7 +25,7 @@
         </Style>
     </UserControl.Resources>
     <Grid x:Name="MainGrid" Background="AliceBlue">
-        <ScrollViewer>
+        <ScrollViewer x:Name="Accountopeningscroller" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <Border BorderBrush="#292075" BorderThickness="1" Margin="4" Padding="20" CornerRadius="15" Width="1060" Height="600" Background="#FFFFFF">
                 <StackPanel Orientation="Vertical"  HorizontalAlignment="Center">
                     <TextBlock Text="Basic Details" Foreground="#292075" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Padding="10 14"/>

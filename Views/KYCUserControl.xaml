@@ -29,7 +29,7 @@
                          ShadowDepth="5" />
     </UserControl.Resources>
     <Grid Background="AliceBlue">
-        <ScrollViewer>
+        <ScrollViewer x:Name="KycScroller" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
             <Border BorderBrush="#F15A29"  Margin="4" CornerRadius="15" Width="1030" Height="580" Background="White" BorderThickness="1.5" Opacity="0.95" >
                 <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" Margin="0 15 0 0">
                     <TextBlock Text="Basic Details" Foreground="#004C8F" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Padding="14"/>
