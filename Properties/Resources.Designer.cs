@@ -61,7 +61,7 @@ namespace BankingApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to   Account Closure  .
+        ///   Looks up a localized string similar to Account Closure.
         /// </summary>
         public static string LangKeyAccountClosure {
             get {
@@ -79,7 +79,7 @@ namespace BankingApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to   Account Opening  .
+        ///   Looks up a localized string similar to Account Opening.
         /// </summary>
         public static string LangKeyAccountOpening {
             get {
