@@ -15,29 +15,47 @@ namespace BankingApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window,INotifyPropertyChanged
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
+        private string logoUrl;
+        private static MainWindow Instance;
+        public string LogoUrl
+        {
+            get
+            {
+                return logoUrl;
+            }
+            set
+            {
+                logoUrl = value;
+                OnPropertyChanged(nameof(LogoUrl));
+            }
+        }
         private List<TabItemTemplate> _tabItems;
 
         public event PropertyChangedEventHandler PropertyChanged;
         private TabItemTemplate _SelectedTab;
-        public TabItemTemplate SelectedTab { get=>_SelectedTab; set { _SelectedTab = value;OnPropertyChanged(nameof(SelectedTab));} }
+        public TabItemTemplate SelectedTab { get => _SelectedTab; set { _SelectedTab = value; OnPropertyChanged(nameof(SelectedTab)); } }
         private string _SelectedBank;
-        public string SelectedBank {  get=>_SelectedBank; set { _SelectedBank = value;OnPropertyChanged(nameof(SelectedBank)); } }
+        public string SelectedBank { get => _SelectedBank; set { _SelectedBank = value; OnPropertyChanged(nameof(SelectedBank)); } }
         public MainWindow()
         {
             InitializeComponent();
+            LogoUrl = "/Images/HomeBankLogo.png";
             MainGrid.DataContext = this;
+            Instance = this;
             var banks = GetBanksName();
             SelectedBank = SelectedBank ?? banks.FirstOrDefault();
             InitializeTabControls();
             SelectedTab = SelectedTab ?? _tabItems.FirstOrDefault();
+
         }
+        public static MainWindow GetSingletonInstance() => Instance;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        private List<string>GetBanksName()
+        private List<string> GetBanksName()
         {
             var names = new List<string>();
             var EnumsValues = Enum.GetValues(typeof(BankType)).Cast<BankType>();

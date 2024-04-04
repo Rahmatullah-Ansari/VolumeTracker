@@ -11,6 +11,7 @@ namespace BankingApp.Views
     public partial class SBIBankUserControl
     {
         private static SBIBankUserControl Instance;
+        private string SelectedType = "";
         public List<TabItemTemplate> _tabItems;
         public TabItemTemplate SelectedTab { get; set; }
         public SBIBankUserControl()
@@ -25,6 +26,31 @@ namespace BankingApp.Views
 
         private void OnTabSelected(object sender, SelectionChangedEventArgs e)
         {
+            SelectedType = SelectedTab.TabTitle.Title;
+            try
+            {
+                if (SelectedType == BankingApp.Properties.Resources.LangKeyAccountClosure)
+                {
+                    MainWindow.GetSingletonInstance().LogoUrl = "/Images/AccountClosureBankLogo.png";
+                    AccountClosureUserControl.GetSingletonInstance().AccountCloserscroller.ScrollToTop();
+                }
+                else if (SelectedType == BankingApp.Properties.Resources.LangKeyAccountOpening)
+                {
+                    MainWindow.GetSingletonInstance().LogoUrl = "/Images/HomeBankLogo.png";
+                    AccountOpeningUserControl.GetSingletonInstance().Accountopeningscroller.ScrollToTop();
+                }
+                else if (SelectedType == BankingApp.Properties.Resources.LangKeyReKycOfCustomer)
+                {
+                    MainWindow.GetSingletonInstance().LogoUrl = "/Images/KycBankLogo.png";
+                    KYCUserControl.GetSingletonInstance().KycScroller.ScrollToTop();
+                }
+                else if (SelectedType == BankingApp.Properties.Resources.LangKeyHome)
+                {
+                    MainWindow.GetSingletonInstance().LogoUrl = "/Images/HomeBankLogo.png";
+                    //      HomeUserControl.GetSingletonInstance().Homescroller.ScrollToTop();
+                }
+            }
+            catch (Exception ex) { }
         }
 
         private void InitializeTabControls()
@@ -54,6 +80,6 @@ namespace BankingApp.Views
                 };
         }
 
-        public static SBIBankUserControl GetSingletonInstance()=>Instance ?? (Instance = new SBIBankUserControl());
+        public static SBIBankUserControl GetSingletonInstance() => Instance ?? (Instance = new SBIBankUserControl());
     }
 }

@@ -189,6 +189,7 @@
     <Resource Include="volumeTracker.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\AccountClosureBankLogo.png" />
     <Content Include="Images\BankLogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -201,6 +202,8 @@
     <Content Include="Images\Group.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\Group44-2.png" />
+    <Resource Include="Images\HomeBankLogo.png" />
     <Content Include="Images\HomeIcon1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -219,6 +222,7 @@
     <Content Include="Images\home.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\KycBankLogo.png" />
     <Content Include="Images\SBI.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
